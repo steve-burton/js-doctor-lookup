@@ -1,5 +1,5 @@
 {
-  "name": "bike-project",
+  "name": "doctor-lookup",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -21,14 +21,5 @@
     "gulp-util": "^3.0.8",
     "jshint": "^2.9.4",
     "vinyl-source-stream": "^1.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/albelka/bike-painter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/albelka/bike-painter/issues"
-  },
-  "homepage": "https://github.com/albelka/bike-painter#readme",
-  "description": ""
+  }
 }

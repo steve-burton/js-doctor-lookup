@@ -1,9 +1,9 @@
 {
-  "name": "bike-project",
+  "name": "doctor-lookup",
   "description": "",
   "main": "index.js",
   "license": "ISC",
-  "homepage": "https://github.com/albelka/bike-painter",
+  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
