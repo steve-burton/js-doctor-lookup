@@ -1,0 +1,27 @@
+#bike-form {
+  width: 40%;
+}
+
+.crappy {
+  display: none;
+}
+
+.teal {
+  display: none;
+}
+
+img {
+  width: 400px;
+}
+
+.splat {
+  border-radius: 30px;
+  padding: 20px 0 30px 30px;
+  margin-bottom: 20px;
+  color: white;
+  background-image: url("./../../scss/img/splat.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  // position: absolute;
+  clip: rect(100px, 0px, 0px, 0px);
+}
