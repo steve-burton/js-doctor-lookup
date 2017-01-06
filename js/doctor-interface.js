@@ -4,10 +4,10 @@ $(document).ready(function() {
   $('#doctor-form').submit(function(event) {
     event.preventDefault();
     var medicalIssue = $('#medicalIssue').val();
-    var newDoctor = new Doctor();
+    var newDoctor = new Doctor(medicalIssue);
 
-    newDoctor.getDoctors();
+    console.log(medicalIssue);
+    newDoctor.getDoctors(medicalIssue);
 
-    
   });
 });
