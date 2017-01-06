@@ -8,6 +8,6 @@ $(document).ready(function() {
 
     newDoctor.getDoctors();
 
-    $("h5.response").text("<h5>" + newDoctor.doctorList + "</h5>");
+    
   });
 });

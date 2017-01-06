@@ -8,15 +8,16 @@ Doctor = function(medicalIssue) {
 Doctor.prototype.getDoctors = function(medicalIssue) {
   var newDoctor = this;
   $.get('https://api.betterdoctor.com/2016-03-01/doctors?query=Toothache&location=45.5231%2C-122.6765%2C100&user_location=45.5231%2C-122.6765&skip=0&limit=20&user_key=' + apiKey).then(function(response) {
-    var searchDoctors = (response.data.profile);
-    console.log(response);
+    var searchDoctors = (response.data[0].practices[0].name);
+      console.log(response);
       console.log(searchDoctors);
       searchDoctors.forEach(function(doctor) {
         this.doctorList.push(doctor);
-        console.log(this.doctorList);
+        console.log(doctor);
       })
       .fail(function(error){
       console.log("fail");
+      $("h5.response").text("newDoctor.doctorList " + newDoctor.doctorList);
     });
   });
 };
