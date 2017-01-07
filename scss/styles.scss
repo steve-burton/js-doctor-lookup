@@ -2,9 +2,17 @@
   display: none;
 }
 
-h5.response {
-  line-height: 1.5em;
-  width: 40%;
+div.response {
+  width: 70%;
+  span.practice {
+    font-weight: 400;
+    font-size: 1em;
+  }
+}
+
+
+button {
+  margin-top: 5px;
 }
 
 form {
