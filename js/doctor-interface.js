@@ -5,9 +5,8 @@ $(document).ready(function() {
     event.preventDefault();
     var medicalIssue = $('#medicalIssue').val();
     var newDoctor = new Doctor(medicalIssue);
+    $('#medicalIssue').val("");
 
-    console.log(medicalIssue);
     newDoctor.getDoctors(medicalIssue);
-
   });
 });
