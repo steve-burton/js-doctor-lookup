@@ -15,6 +15,7 @@ Doctor.prototype.getDoctors = function(medicalIssue) {
       $('.result').show();
       $('div.response').html(doctorList);
     }).fail(function(error){
+      console.log("fail");
       $('div.response').text(error.responseJSON.message);
   });
 };
