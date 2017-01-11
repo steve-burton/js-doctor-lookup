@@ -12,8 +12,6 @@ Doctor.prototype.getDoctors = function(medicalIssue) {
       searchDoctors.forEach(function(doctor) {
         doctorList.push("<h5>" + doctor.profile.first_name + " " + doctor.profile.last_name + " - " + "<span class='practice'>" + "Practice name: " + doctor.practices[0].name + ", Phone: " + doctor.practices[0].phones[0].number.slice(0, 3) + "-" + doctor.practices[0].phones[0].number.slice(3, 6) + "-" + doctor.practices[0].phones[0].number.slice(6, 10) + " " + doctor.practices[0].phones[0].type + "</span></h5>");
       });
-      $('div.response').hide();
-      $('div.response').show();
       $('.result').show();
       $('div.response').html(doctorList);
     }).fail(function(error){

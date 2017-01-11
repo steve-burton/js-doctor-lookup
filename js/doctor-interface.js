@@ -7,6 +7,10 @@ $(document).ready(function() {
     var newDoctor = new Doctor(medicalIssue);
     $('#medicalIssue').val("");
 
+    if(medicalIssue === "") {
+      return alert("Please enter your medical issue.");
+    }
+
     newDoctor.getDoctors(medicalIssue);
   });
 });
